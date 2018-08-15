@@ -13,6 +13,6 @@ const slackLogLevel = 'info';
 const slackRtm = slackClient.init(slackToken, slackLogLevel, witClient);
 
 slackClient.addAuthenticatedHandler(slackRtm, () => {
-  const server = service.listen(3001, () =>
-    console.log(`IRIS is listening on ${server.address().port} in ${service.get('env')}`));
+  const server = service.listen(3010, () =>
+    console.log(`IRIS-Time is listening on ${server.address().port} in ${service.get('env')}`));
 });
